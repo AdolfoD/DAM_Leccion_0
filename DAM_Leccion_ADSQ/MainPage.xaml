@@ -30,6 +30,17 @@
                 SemanticProperties.Hint="Counts the number of times you click"
                 Clicked="OnCounterClicked"
                 HorizontalOptions="Fill" />
+
+            <Entry
+                Placeholder="Escribe Un Nombre:"
+                HorizontalOptions="FillAndExpand"
+                x:Name="txtNombre3"></Entry>
+
+            <Button
+                x:Name="btnAceptar"
+                Text="ACEPTAR" 
+                Clicked="btnAceptar_Clicked"
+                HorizontalOptions="CenterAndExpand" />
         </VerticalStackLayout>
     </ScrollView>
 
