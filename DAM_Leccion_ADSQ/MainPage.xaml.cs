@@ -25,10 +25,17 @@ namespace DAM_Leccion_ADSQ
         }
         public void Ejecutar()
         {
-            PersonaModel personaModel = new PersonaModel();
+            PersonaModel personaModel = new PersonaModel()
+            {
+                Nombre = "Hola Bebé",
+            };
+            BindingContext = personaModel.Nombre;
+            //txtNombre3.Text = personaModel.Nombre;
 
-            personaModel.Nombre = "Hola Bebé";
-            txtNombre3.Text= personaModel.Nombre;
+           // Binding personaBinding = new Binding();
+            //personaBinding.Source = personaModel; //ORIGEN
+           // personaBinding.Path = "Nombre";//RUTA
+            //txtNombre3.SetBinding(Entry.TextProperty,personaBinding);//DESTINO FINAL
         }
         private void btnAceptar_Clicked(object sender, EventArgs e)
         {
