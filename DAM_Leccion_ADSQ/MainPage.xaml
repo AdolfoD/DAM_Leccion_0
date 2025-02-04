@@ -46,6 +46,11 @@
                 x:Name="txtNombre3"
                 Text="{Binding Nombre}"></Entry>
 
+            <Entry
+                Placeholder="Escribe Un Nombre:"
+                HorizontalOptions="FillAndExpand"
+                x:Name="txtNombre4"></Entry>
+
             <Button
                 x:Name="btnAceptar"
                 Text="ACEPTAR" 
